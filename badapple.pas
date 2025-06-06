@@ -1,7 +1,7 @@
 
 //
 // BADAPPLE Loader (Tebe / Madteam)
-// changes: 24.10.2018
+// changes: 24.10.2018 ; 06.06.2025
 //
 
 uses crt, atari, sysutils, misc, highmem, graph, graphics, types;
@@ -14,7 +14,7 @@ const
 
 	pmgdata = $9800+$300;
 
-	version = '1.82';
+	version = '1.83';
 
 type
 	TRLEAnim = packed record
@@ -91,7 +91,7 @@ var
 
    canvas: TCanvas;
 
-   buf: array [0..$3e00-1] of byte;// absolute $6000;
+   buf: array [0..$3e00-1] of byte absolute $5200;
 
    wav: TWave;
    anm: TRLEAnim;
