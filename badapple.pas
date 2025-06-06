@@ -14,7 +14,7 @@ const
 
 	pmgdata = $9800+$300;
 
-	version = '1.83';
+	version = '1.84';
 
 type
 	TRLEAnim = packed record
